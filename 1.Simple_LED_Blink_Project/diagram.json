@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "author": "Md. Shefat Al Mahmud 213-15-4364",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-nano", "id": "nano", "top": 158.21, "left": 12.58, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -119.8,
+      "left": -36.62,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -119.78,
+      "left": -12.29,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": -120.45,
+      "left": 12.95,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led4",
+      "top": -121.05,
+      "left": 40.91,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led5",
+      "top": -120.6,
+      "left": 68.33,
+      "attrs": { "color": "cyan" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led6",
+      "top": -121.05,
+      "left": 97.99,
+      "attrs": { "color": "purple" }
+    }
+  ],
+  "connections": [
+    [ "led1:C", "nano:2", "green", [ "v0" ] ],
+    [ "led2:C", "nano:3", "green", [ "v0" ] ],
+    [ "led3:C", "nano:4", "green", [ "v0" ] ],
+    [ "led1:A", "led2:A", "green", [ "v0" ] ],
+    [ "led2:A", "led3:A", "green", [ "v0" ] ],
+    [ "led3:A", "nano:5V", "green", [ "v0" ] ],
+    [ "led3:A", "led4:A", "green", [ "v0" ] ],
+    [ "led4:A", "led5:A", "green", [ "v0" ] ],
+    [ "led5:A", "led6:A", "green", [ "v0" ] ],
+    [ "led4:C", "nano:5", "green", [ "v0" ] ],
+    [ "led5:C", "nano:6", "green", [ "v0" ] ],
+    [ "led6:C", "nano:7", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
